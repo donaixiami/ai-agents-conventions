@@ -43,7 +43,7 @@ ai-agents-conventions/
 1. **读规则**：打开 `Agents.md`  
 2. **接业务仓**：拷贝 `Agents.md` + 需要的 skill 到业务项目，或在会话中引用本仓路径  
 3. **多项目（≥3）**：在业务仓维护 `docs/context/REGISTRY.md`，保证每个子项目有 `docs/PROJECT_CONTEXT.md` 与项目 skill  
-4. **做 UI**：按 `ui-standard` 出稿；不规则切图必须先问用户  
+4. **做 UI**：按 `ui-standard` 出稿（**PC / H5 / 小程序同等要求**）；不规则切图必须先问用户  
 
 ---
 
