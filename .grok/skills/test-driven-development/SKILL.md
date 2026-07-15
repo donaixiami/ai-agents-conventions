@@ -5,6 +5,10 @@ description: Use when implementing any feature or bugfix, before writing impleme
 
 # Test-Driven Development (TDD)
 
+> **本仓补充（必读）**：正式测试体之前须先走 BDD/Gherkin 骨架与用户确认闸门，见  
+> [bdd-gherkin-gate.md](./bdd-gherkin-gate.md)。  
+> 上游正文以下保持原样；与补充冲突时：**先骨架与确认，再 RED-GREEN-REFACTOR**。
+
 ## Overview
 
 Write the test first. Watch it fail. Write minimal code to pass.

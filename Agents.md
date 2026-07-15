@@ -65,3 +65,11 @@
     AI 在判断任务是否命中某 skill 时，必须先读 `skills/README.md`，再打开表中对应的 `.grok/skills/<name>/SKILL.md`。
     新增 skill：实现放在 `.grok/skills/<name>/`，按 `skills/ADDING.md` 操作，并在 `skills/README.md` 登记；未登记不得当作本仓正式 skill。
     模板见 `skills/_template/`。
+
+14.
+
+    **测试（TDD + BDD 骨架）**：实现功能、修 bug、重构或改行为时，必须使用 `.grok/skills/test-driven-development/`。
+    - 在定义测试之前，**禁止**编写逻辑/生产代码。
+    - 测试框架与目录以**当前业务项目**的 `PROJECT_CONTEXT` / 项目 skill 为准（勿把某一引擎路径当成全局强制）。
+    - 编写**正式测试代码**之前：须先按 BDD，用 Gherkin 的 Given-When-Then 写行为注释 + 测试函数名（空骨架），再用 AskUserQuestion（或等价确认）请用户确认是否继续；**完成行为注释前禁止写测试体**。
+    - 细则见 `.grok/skills/test-driven-development/bdd-gherkin-gate.md` 与上游 `SKILL.md`。

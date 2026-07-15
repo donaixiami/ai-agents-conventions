@@ -10,9 +10,10 @@
 
 | 文件 | 说明 |
 |------|------|
-| `SKILL.md` | TDD 主规范 |
-| `testing-anti-patterns.md` | 测试反模式参考（由 SKILL 引用） |
+| `SKILL.md` | TDD 主规范（上游） |
+| `testing-anti-patterns.md` | 测试反模式参考（上游，由 SKILL 引用） |
+| `bdd-gherkin-gate.md` | **本仓补充**：正式测试前的 BDD/Gherkin 骨架与用户确认（由协作截图改写，已去掉引擎绑定） |
 
-同步上游时：覆盖上述两个文件，并核对链接与 frontmatter 是否变化；然后更新本文件的核对日期。
+同步上游时：只覆盖 `SKILL.md` 与 `testing-anti-patterns.md`，保留 `bdd-gherkin-gate.md`；核对 SKILL 顶部对本仓补充的链接是否仍在。
 
 最后同步：2026-07-15
