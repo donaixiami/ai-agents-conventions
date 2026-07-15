@@ -31,7 +31,8 @@ ai-agents-conventions/
 └── .grok/skills/               # Skill 实现正文
     ├── ui-standard/
     ├── project-context/
-    └── test-driven-development/  # 来自 obra/superpowers
+    ├── test-driven-development/  # 来自 obra/superpowers + 本仓 BDD 闸门
+    └── conventional-commits/     # 中文约定式提交
 ```
 
 ## 3. 使用方式

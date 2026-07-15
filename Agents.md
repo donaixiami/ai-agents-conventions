@@ -73,3 +73,9 @@
     - 测试框架与目录以**当前业务项目**的 `PROJECT_CONTEXT` / 项目 skill 为准（勿把某一引擎路径当成全局强制）。
     - 编写**正式测试代码**之前：须先按 BDD，用 Gherkin 的 Given-When-Then 写行为注释 + 测试函数名（空骨架），再用 AskUserQuestion（或等价确认）请用户确认是否继续；**完成行为注释前禁止写测试体**。
     - 细则见 `.grok/skills/test-driven-development/bdd-gherkin-gate.md` 与上游 `SKILL.md`。
+
+15.
+
+    **Git 提交（中文约定式）**：用户要求提交、commit 或推送 GitHub 时，必须遵循
+    `.grok/skills/conventional-commits/SKILL.md`。
+    格式：`<type>(<可选 scope>): <中文摘要>`；说明默认中文；只暂存相关文件；未同意不 push、不 force。

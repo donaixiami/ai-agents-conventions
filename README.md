@@ -20,6 +20,7 @@
 | [.grok/skills/ui-standard/](./.grok/skills/ui-standard/SKILL.md) | 通用 UI 出稿规范 |
 | [.grok/skills/project-context/](./.grok/skills/project-context/SKILL.md) | 多项目上下文恢复闸门 |
 | [.grok/skills/test-driven-development/](./.grok/skills/test-driven-development/SKILL.md) | TDD（来自 obra/superpowers） |
+| [.grok/skills/conventional-commits/](./.grok/skills/conventional-commits/SKILL.md) | 中文约定式提交 |
 | [docs/context/REGISTRY.md](./docs/context/REGISTRY.md) | 公共上下文登记表示例 |
 | [docs/PROJECT_CONTEXT.md](./docs/PROJECT_CONTEXT.md) | 本仓自身上下文 |
 
@@ -41,7 +42,8 @@ ai-agents-conventions/
 └── .grok/skills/                   # Skill 实现（Grok 加载）
     ├── ui-standard/
     ├── project-context/
-    └── test-driven-development/  # TDD（上游 obra/superpowers）
+    ├── test-driven-development/  # TDD（上游 obra/superpowers）
+    └── conventional-commits/     # 中文约定式提交
 ```
 
 ---
