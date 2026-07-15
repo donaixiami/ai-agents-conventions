@@ -19,11 +19,16 @@
 ai-agents-conventions/
 ├── Agents.md
 ├── README.md
+├── skills/                     # Skill 索引（AI 先读 skills/README.md）
+│   ├── README.md
+│   ├── ADDING.md
+│   └── _template/
 ├── docs/
 │   ├── PROJECT_CONTEXT.md      # 本文
+│   ├── 项目介绍.md
 │   └── context/
 │       └── REGISTRY.md         # 公共上下文登记表
-└── .grok/skills/
+└── .grok/skills/               # Skill 实现正文
     ├── ui-standard/
     └── project-context/
 ```
@@ -31,8 +36,10 @@ ai-agents-conventions/
 ## 3. 使用方式
 
 1. 在本仓或拷贝规则到目标仓后，AI 会话遵循 `Agents.md`。
-2. 多项目（≥3）恢复上下文：先 `docs/context/REGISTRY.md`，再各项目自身 CONTEXT + skill（见 project-context skill）。
-3. UI 出稿：先 `ui-standard` skill。
+2. 查 skill：先 `skills/README.md`，再读 `.grok/skills/<name>/SKILL.md`。
+3. 多项目（≥3）恢复上下文：先 `docs/context/REGISTRY.md`，再各项目自身 CONTEXT + skill（见 project-context skill）。
+4. UI 出稿：先 `ui-standard` skill。
+5. 新增 skill：见 `skills/ADDING.md`，并登记到 `skills/README.md`。
 
 ## 4. 非目标
 

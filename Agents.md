@@ -58,3 +58,10 @@
     3. **缺失则先补再干活**：对缺文档或 skill 的项目，先深度阅读代码/README/配置与现有 docs，再创建最小可用的 `PROJECT_CONTEXT` 与项目 skill，并回写公共登记表状态；禁止在缺上下文时靠猜测跨项目改代码。
     4. 已存在则先读公共登记表 → 再读当次相关项目的 `PROJECT_CONTEXT` + skill，再动手。
     详细流程、判定标准、模板与验收见 `.grok/skills/project-context/SKILL.md`。
+
+13.
+
+    **Skills 目录（先索引再正文）**：本仓库可复用 skill 的**总目录与登记表**为 `skills/README.md`。
+    AI 在判断任务是否命中某 skill 时，必须先读 `skills/README.md`，再打开表中对应的 `.grok/skills/<name>/SKILL.md`。
+    新增 skill：实现放在 `.grok/skills/<name>/`，按 `skills/ADDING.md` 操作，并在 `skills/README.md` 登记；未登记不得当作本仓正式 skill。
+    模板见 `skills/_template/`。

@@ -15,6 +15,8 @@
 |------|------|
 | [docs/项目介绍.md](./docs/项目介绍.md) | 项目是什么、解决什么、怎么用 |
 | [Agents.md](./Agents.md) | 通用协作规则（会话总闸门） |
+| [**skills/README.md**](./skills/README.md) | **Skill 总目录（AI 先读）** |
+| [skills/ADDING.md](./skills/ADDING.md) | 如何新增 skill |
 | [.grok/skills/ui-standard/](./.grok/skills/ui-standard/SKILL.md) | 通用 UI 出稿规范 |
 | [.grok/skills/project-context/](./.grok/skills/project-context/SKILL.md) | 多项目上下文恢复闸门 |
 | [docs/context/REGISTRY.md](./docs/context/REGISTRY.md) | 公共上下文登记表示例 |
@@ -27,11 +29,15 @@
 ```
 ai-agents-conventions/
 ├── Agents.md
+├── skills/                         # Skill 索引与新增指南（给人/AI 浏览）
+│   ├── README.md                   # 总目录：有哪些 skill、何时用
+│   ├── ADDING.md
+│   └── _template/
 ├── docs/
 │   ├── 项目介绍.md
 │   ├── PROJECT_CONTEXT.md
 │   └── context/REGISTRY.md
-└── .grok/skills/
+└── .grok/skills/                   # Skill 实现（Grok 加载）
     ├── ui-standard/
     └── project-context/
 ```
@@ -41,9 +47,11 @@ ai-agents-conventions/
 ## 三分钟上手
 
 1. **读规则**：打开 `Agents.md`  
-2. **接业务仓**：拷贝 `Agents.md` + 需要的 skill 到业务项目，或在会话中引用本仓路径  
-3. **多项目（≥3）**：在业务仓维护 `docs/context/REGISTRY.md`，保证每个子项目有 `docs/PROJECT_CONTEXT.md` 与项目 skill  
-4. **做 UI**：按 `ui-standard` 出稿（**PC / H5 / 小程序同等要求**）；不规则切图必须先问用户  
+2. **看有哪些 skill**：打开 [`skills/README.md`](./skills/README.md)，再读命中的 `.grok/skills/...`  
+3. **接业务仓**：拷贝 `Agents.md` + 需要的 skill 到业务项目，或在会话中引用本仓路径  
+4. **多项目（≥3）**：在业务仓维护 `docs/context/REGISTRY.md`，保证每个子项目有 `docs/PROJECT_CONTEXT.md` 与项目 skill  
+5. **做 UI**：按 `ui-standard` 出稿（**PC / H5 / 小程序同等要求**）；不规则切图必须先问用户  
+6. **新增 skill**：按 [`skills/ADDING.md`](./skills/ADDING.md)  
 
 ---
 
