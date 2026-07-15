@@ -30,7 +30,8 @@ ai-agents-conventions/
 │       └── REGISTRY.md         # 公共上下文登记表
 └── .grok/skills/               # Skill 实现正文
     ├── ui-standard/
-    └── project-context/
+    ├── project-context/
+    └── test-driven-development/  # 来自 obra/superpowers
 ```
 
 ## 3. 使用方式
