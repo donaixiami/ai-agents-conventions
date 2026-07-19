@@ -1,7 +1,7 @@
 # PROJECT_CONTEXT — ai-agents-conventions
 
 > 规则与 skill 中枢仓库，不承载具体业务产品实现。  
-> 最后更新：2026-07-19（补充页面样式还原与原子化迁移闸门）
+> 最后更新：2026-07-19（补充原型 UI 与素材根目录归档闸门）
 > 原目录名 `ag-project` 已废弃，统一使用本仓库名。
 
 ## 1. 项目定位
@@ -15,6 +15,8 @@
 - 公共登记表：`docs/context/REGISTRY.md`
 - 测试服务复用与清理：`Agents.md` 第 18 条
 - 页面样式还原与原子化迁移：`Agents.md` 第 19 条
+- 局部 UI 独立预览确认：`Agents.md` 第 20 条
+- 原型 UI 与素材根目录归档：`Agents.md` 第 21 条；默认目录 `ui-prototypes/`、`ui-assets/`
 
 ## 2. 目录结构
 
