@@ -3,7 +3,7 @@
 > 工作区级索引：登记「有哪些项目、各自上下文与 skill 在哪、是否齐全」。  
 > **不替代**各项目自己的 `docs/PROJECT_CONTEXT.md` 与 skill。  
 > 恢复上下文时：先读本文 → 再读相关项目文档。  
-> 最后全量核对：2026-07-15
+> 最后全量核对：2026-07-19
 
 ## 使用规则
 
@@ -16,7 +16,7 @@
 
 | 项目 | 路径 | PROJECT_CONTEXT | Skill | 状态 | 一句话 |
 |------|------|-----------------|-------|------|--------|
-| ai-agents-conventions（规则中枢） | `.` | `docs/PROJECT_CONTEXT.md` | `.grok/skills/*`（通用 skill 集） | ok | 存放通用 Agents 规则与跨项目 skill，不承载业务实现 |
+| ai-agents-conventions（规则中枢） | `.` | `docs/PROJECT_CONTEXT.md` | `.grok/skills/*`（`uniapp-cross-platform` 为外部 submodule） | ok | 存放通用 Agents 规则与跨项目 skill，不承载业务实现 |
 
 ## 兄弟工作区示意（BackendManagementSystem）
 

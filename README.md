@@ -19,6 +19,7 @@
 | [skills/ADDING.md](./skills/ADDING.md) | 如何新增 skill |
 | [.grok/skills/ui-standard/](./.grok/skills/ui-standard/SKILL.md) | 通用 UI 出稿规范 |
 | [.grok/skills/project-context/](./.grok/skills/project-context/SKILL.md) | 多项目上下文恢复闸门 |
+| [.grok/skills/uniapp-cross-platform/](./.grok/skills/uniapp-cross-platform/SKILL.md) | uni-app App/微信小程序/H5 三端兼容闸门 |
 | [.grok/skills/test-driven-development/](./.grok/skills/test-driven-development/SKILL.md) | TDD（来自 obra/superpowers） |
 | [.grok/skills/conventional-commits/](./.grok/skills/conventional-commits/SKILL.md) | 中文约定式提交 |
 | [docs/context/REGISTRY.md](./docs/context/REGISTRY.md) | 公共上下文登记表示例 |
@@ -42,8 +43,9 @@ ai-agents-conventions/
 └── .grok/skills/                   # Skill 实现（Grok 加载）
     ├── ui-standard/
     ├── project-context/
-    ├── test-driven-development/  # TDD（上游 obra/superpowers）
-    └── conventional-commits/     # 中文约定式提交
+    ├── uniapp-cross-platform/   # 外部 Git submodule：App/微信小程序/H5 三端兼容
+    ├── test-driven-development/ # TDD（上游 obra/superpowers）
+    └── conventional-commits/    # 中文约定式提交
 ```
 
 ---
@@ -51,11 +53,14 @@ ai-agents-conventions/
 ## 三分钟上手
 
 1. **读规则**：打开 `Agents.md`  
-2. **看有哪些 skill**：打开 [`skills/README.md`](./skills/README.md)，再读命中的 `.grok/skills/...`  
-3. **接业务仓**：拷贝 `Agents.md` + 需要的 skill 到业务项目，或在会话中引用本仓路径  
-4. **多项目（≥3）**：在业务仓维护 `docs/context/REGISTRY.md`，保证每个子项目有 `docs/PROJECT_CONTEXT.md` 与项目 skill  
-5. **做 UI**：按 `ui-standard` 出稿（**PC / H5 / 小程序同等要求**）；不规则切图必须先问用户  
-6. **新增 skill**：按 [`skills/ADDING.md`](./skills/ADDING.md)  
+2. **初始化外部 Skill**：执行 `git submodule update --init --recursive`
+3. **看有哪些 skill**：打开 [`skills/README.md`](./skills/README.md)，再读命中的 `.grok/skills/...`
+4. **接业务仓**：拷贝 `Agents.md` + 需要的 skill 到业务项目，或在会话中引用本仓路径
+5. **多项目（≥3）**：在业务仓维护 `docs/context/REGISTRY.md`，保证每个子项目有 `docs/PROJECT_CONTEXT.md` 与项目 skill
+6. **做 UI**：按 `ui-standard` 出稿（**PC / H5 / 小程序同等要求**）；不规则切图必须先问用户
+7. **做 uni-app 三端功能**：先初始化 `uniapp-cross-platform` submodule，再建能力矩阵并分别验证 App、微信小程序和 H5
+8. **更新 uni-app Skill**：执行 `git submodule update --remote --merge .grok/skills/uniapp-cross-platform`，确认后提交 submodule 指针
+9. **新增 skill**：按 [`skills/ADDING.md`](./skills/ADDING.md)
 
 ---
 

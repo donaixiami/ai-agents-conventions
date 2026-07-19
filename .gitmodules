@@ -1,0 +1,4 @@
+[submodule ".grok/skills/uniapp-cross-platform"]
+	path = .grok/skills/uniapp-cross-platform
+	url = https://github.com/donaixiami/uniapp-cross-platform-skill.git
+	branch = main

@@ -79,3 +79,13 @@
     **Git 提交（中文约定式）**：用户要求提交、commit 或推送 GitHub 时，必须遵循
     `.grok/skills/conventional-commits/SKILL.md`。
     格式：`<type>(<可选 scope>): <中文摘要>`；说明默认中文；只暂存相关文件；未同意不 push、不 force。
+
+16.
+
+    **uni-app 三端兼容闸门**：凡使用 uni-app 新建、迁移、修改或审查需要同时运行于 App（Android/iOS）、微信小程序与 H5 的页面、组件、API、权限、文件、样式或第三方依赖，必须先读取并遵循
+    `.grok/skills/uniapp-cross-platform/SKILL.md`、`references/compatibility-matrix.md` 和 `references/checklist.md`。该目录是外部仓库 `donaixiami/uniapp-cross-platform-skill` 的 submodule，不在本仓直接编辑 Skill 正文。
+    编码前必须锁定目标版本、渲染模型和能力矩阵；交付前必须分别报告三端构建与真机/浏览器验证状态。缺少设备、证书或账号时只能标记“未验证/阻塞”，不得以构建通过宣称三端兼容完成。
+
+17.
+
+    **uni-app 规则同步快捷指令**：用户说“同步 uniapp 规则”时，将业务仓新增且适用于跨项目 App/微信小程序/H5 的规则提炼到独立仓库 `donaixiami/uniapp-cross-platform-skill`，发布后更新本仓 submodule 指针并同步业务仓；仅业务仓专用的规则不提升到通用 Skill。
