@@ -1,7 +1,7 @@
 # PROJECT_CONTEXT — ai-agents-conventions
 
 > 规则与 skill 中枢仓库，不承载具体业务产品实现。  
-> 最后更新：2026-07-19（补充测试服务复用与清理闸门）
+> 最后更新：2026-07-19（补充页面样式还原与原子化迁移闸门）
 > 原目录名 `ag-project` 已废弃，统一使用本仓库名。
 
 ## 1. 项目定位
@@ -14,6 +14,7 @@
 - uni-app App/微信小程序/H5 三端兼容：外部 Git 仓库 `donaixiami/uniapp-cross-platform-skill`，本仓以 submodule 挂载到 `.grok/skills/uniapp-cross-platform/`
 - 公共登记表：`docs/context/REGISTRY.md`
 - 测试服务复用与清理：`Agents.md` 第 18 条
+- 页面样式还原与原子化迁移：`Agents.md` 第 19 条
 
 ## 2. 目录结构
 
